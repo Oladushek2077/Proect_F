@@ -1,0 +1,484 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+                                                                /* Arbait */
+
+.wrapper{
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+.center{
+	max-width: 1125px;
+	width: 100%;
+	margin: 0 auto;
+}
+body{
+	font-family: 'Roboto';
+}
+
+/* header */
+
+header{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.head1se{
+	display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+header > .head1se > nav{
+    width: 680px;
+    padding-top: 18px;
+}
+header > .head1se > nav > ul{ 
+    display: flex;
+    justify-content: space-between;
+
+}
+header > .head1se > nav > ul > li{
+    position: relative;
+}
+header > .head1se > nav > ul > li > a{
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(31, 46, 53, 0.8);
+    text-decoration: none;
+	transition: 0.5s;
+}
+header > .head1se > nav > ul > li > a > img{
+    position: absolute;
+    top: 6px;
+    left: 52px;
+}
+
+header > .head1se > nav > ul > li > a:hover, header > .head1se > nav > ul > li > ul > li > a:hover{ 
+    font-weight: bold;
+    color: rgba(31, 46, 53, 0.8);
+    
+}
+/* списки */
+
+header > .head1se > nav > ul > li > ul{
+    /* Вырубить  в адаптиве*/
+    position: absolute;
+    display: none;
+    /* margin-top: 5px; */
+    text-align: start;
+}
+header > .head1se > nav > ul > li > .sp2 > li{
+    width: 211px;
+}
+header > .head1se > nav > ul > li > ul > li > a{
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(31, 46, 53, 0.8);
+    text-decoration: none;
+	transition: 0.5s;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 10px;
+}
+header > .head1se > nav > ul > li:hover > ul{
+    display: block;
+}
+
+
+header .links{
+    padding-top: 18px;
+}
+header .links ul{
+    display: flex;
+    width: 108px;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+	transition: 0.5s;
+}
+header .links ul li a{
+    display: block;
+}
+
+/* burgmenu */
+
+.head1se [type="checkbox"],
+.head1se label.togglesubmenu{
+    display: none;
+}
+.head1se label.togglemenu{
+    display: none;
+    position: relative;
+}
+
+
+/* Section2 */
+
+
+
+.sect2 .back1{
+    background: linear-gradient(#EE4248, 90%, #F6F6F6 90%);
+
+
+} 
+.sect2 .back1 .content{
+    display: flex;
+    justify-content: center;
+    padding-top: 74px;
+    padding-bottom: 99px;
+}
+.sect2 .back1 .content h2{
+    width: 745px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 133.69%;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+.sect2 .back1 .content h2 span{
+    font-weight: bold;
+}
+.sect3{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 95px;
+    margin-bottom: 81px;
+}
+
+.sect3 .text-left h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 133.69%;
+    color: #1F2E35;
+}
+.sect3 .text-left img{
+    padding-bottom: 29px;
+}
+.sect3 .text-left p{
+    max-width: 500px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    color: #30444E;
+}
+
+.sect3 .image-right{
+    align-self: center;
+}
+.sect3 .image-right img{
+    padding-top: 77px;
+}
+
+/* Секция ME */
+.sect_ME{
+    margin-top: 115px;
+    margin-bottom: 24px;
+}
+.sect_ME .contentF{
+    display: grid;
+    grid-template-columns: 290px 269px 1fr;
+    grid-template-rows: auto;
+    column-gap: 45px;
+
+}
+.sect_ME .contentF .bloc1{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+.sect_ME .contentF .bloc1 img{
+    padding-top: 28px;
+}
+.sect_ME .contentF .bloc1 h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #263238;
+    padding-bottom: 8px;
+    padding-top: 10px;
+}
+.sect_ME .contentF .bloc1 p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #263238;
+}
+.sect_ME .contentF .bloc2{
+    grid-column: 2;
+    grid-row: 1;
+
+}
+.sect_ME .contentF .bloc2 h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #263238;
+    padding-bottom: 15px;
+    padding-top: 51px;
+}
+.sect_ME .contentF .bloc2 .contact a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #263238;
+}
+.sect_ME .contentF .bloc3{
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 417px;
+    grid-template-rows: 43px 43px;
+    row-gap: 21px;
+    padding-top: 75px;
+    margin-left: 11%;
+}
+.sect_ME .contentF .bloc3 .line_1{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sect_ME .contentF .bloc3 .line_2{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* секция footer */
+
+footer{
+    background-color: #EE4248;
+    text-align: center;
+
+}
+footer p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    
+}
+footer p span{
+    font-weight: 500;
+}
+
+
+@media all and (max-width: 1200px){
+    .center{
+		padding-left: 31px;
+		padding-right: 31px;
+		width: calc(100% - 60px);
+	}
+    .sect2 .back1{
+        padding-left: 31px;
+		padding-right: 31px;
+		width: calc(100% - 60px);
+    }
+
+    .sect_ME .contentF{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sect_ME .contentF .bloc3{
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+    .sect3 .text-left{
+        width: 46%;
+    }
+    .sect3 .image-right{
+        width: 50%;
+    }
+    .sect3 .image-right img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 960px){
+
+    header .links{
+        display: none;
+    }
+
+    header > .head1se > .logo > a > img{
+        width: 100%;
+        max-width: 100%;
+    }
+    header > .head1se > nav{
+        text-align: end;
+        width: auto;
+    }
+    header > .head1se > nav > ul{
+        display: none;
+        right: 52px;
+        top: 70px;
+    }
+
+    header > .head1se > nav > ul > li > ul > li > a{ 
+        background: #F6F6F6;
+    }
+
+    header > .head1se > nav > ul > li > a{
+        text-align: start;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        padding: 10px 10px;
+    }
+    /* расположение стрелки */
+    header > .head1se > nav > ul > li > a > img{
+        position: absolute;
+        top: 15px;
+        left: 60px;
+    }
+    header > .head1se > nav > ul > li > ul{
+        position: static;
+        /* right: 114px; */
+        margin-top: 0;
+        top: 0px;
+    }
+    .head1se label.togglemenu{
+        display: block;
+        margin-bottom: 10px;
+    }
+    input.togglemenu:checked ~ ul{
+        display: block;
+    }
+    input.togglesubmenu:checked ~ ul{
+        display: block;
+        /* position: relative; */
+    }
+    .sect2 .back1 .content h2{
+        font-size: 36px;
+    }
+    .sect3{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 17px;
+        margin-bottom: 21px;
+    }
+    .sect3 .image-right{
+        width: auto;
+    }
+    .sect3 .image-right img{
+        padding-top: 41px;
+    }
+    .sect3 .text-left{
+        order: 2;
+        width: auto;
+        margin-top: 38px;
+    }
+
+    
+    .sect_ME{
+        margin-top: auto;
+        padding-top: 16px;
+    }
+    .sect_ME .contentF{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sect_ME .contentF .bloc1{
+        max-width: 267px;
+    }
+    .sect_ME .contentF .bloc3 > .line_1 > img{
+        max-width: 100%;
+    }
+    .sect_ME .contentF .bloc3 > .line_2 > img{
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 420px){
+
+    .sect_ME .contentF .bloc3{
+        display: flex;
+        flex-direction: column;
+    }
+    .sect_ME .contentF .bloc3 > .line_1{
+        flex-direction: column;
+    }
+    .sect_ME .contentF .bloc3 > .line_2{
+        flex-direction: column;
+    }
+    .sect_ME .contentF .bloc3 > .line_1 > img{
+        margin: 5px 0;
+    }
+    .sect_ME .contentF .bloc3 > .line_2 > img{
+        margin: 5px 0;
+    }
+
+}

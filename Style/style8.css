@@ -94,6 +94,7 @@ header > .head1se > nav > ul > li > a{
     color: rgba(31, 46, 53, 0.8);
     text-decoration: none;
 	transition: 0.5s;
+    padding: 0;
 }
 header > .head1se > nav > ul > li > a > img{
     position: absolute;
@@ -114,6 +115,7 @@ header > .head1se > nav > ul > li > ul{
     display: none;
     /* margin-top: 5px; */
     text-align: start;
+    padding: 0;
 }
 header > .head1se > nav > ul > li > .sp2 > li{
     width: 211px;
@@ -132,9 +134,7 @@ header > .head1se > nav > ul > li > ul > li > a{
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     padding: 10px 10px;
 }
-header > .head1se > nav > ul > li:hover > ul{
-    display: block;
-}
+
 
 
 header .links{
@@ -438,6 +438,7 @@ footer p span{
     }
     input.togglemenu:checked ~ ul{
         display: block;
+        position: absolute;
     }
     input.togglesubmenu:checked ~ ul{
         display: block;

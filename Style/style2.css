@@ -92,6 +92,7 @@ header > .head1se > nav > ul > li > a{
     color: rgba(31, 46, 53, 0.8);
     text-decoration: none;
 	transition: 0.5s;
+    padding: 0;
 }
 header > .head1se > nav > ul > li > a > img{
     position: absolute;
@@ -112,6 +113,7 @@ header > .head1se > nav > ul > li > ul{
     display: none;
     /* margin-top: 5px; */
     text-align: start;
+    padding: 0;
 }
 header > .head1se > nav > ul > li > .sp2 > li{
     width: 211px;
@@ -130,9 +132,7 @@ header > .head1se > nav > ul > li > ul > li > a{
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     padding: 10px 10px;
 }
-header > .head1se > nav > ul > li:hover > ul{
-    display: block;
-}
+
 
 
 header .links{
@@ -166,22 +166,16 @@ header .links ul li a{
 
 
 .sect2 .back1{
-    background-image: url('../Image/st2/Backgroundst2№1.png'), url('../Image/st2/Backgroundst2№2.png');
-    background-repeat: no-repeat, no-repeat;
-    /* height: 520px; */
-    background-position: 0 3000%, 0 0;
-}
-/* .sect2 .back1 .back2{
-    background-image: url('../Image/Backgroundst2№1.png');
+    background-image: url('../Image/st2/background3.png');
     background-repeat: no-repeat;
 
+}
 
-} */
 .sect2 .back1 .content{
     display: flex;
     justify-content: center;
     padding-top: 74px;
-    padding-bottom: 99px;
+    padding-bottom: 125px;
 }
 .sect2 .back1 .content h2{
     width: 545px;
@@ -420,6 +414,7 @@ footer p span{
     }
     input.togglemenu:checked ~ ul{
         display: block;
+        position: absolute;
     }
     input.togglesubmenu:checked ~ ul{
         display: block;
@@ -428,7 +423,11 @@ footer p span{
     .sect2 .back1{
         padding-left: 31px;
 		padding-right: 31px;
-		width: calc(100% - 60px);
+		/* width: calc(100% - 60px); */
+        background-position: bottom;
+    }
+    .sect2 .back1 .content h2{
+        font-size: 36px;
     }
 
     .sect3{
@@ -437,9 +436,7 @@ footer p span{
         margin-top: 8px;
         margin-bottom: 35px;
     }
-    .sect2 .back1{
-        background-position: 34% 3000%, 34% 0;
-    }
+
     .sect3 .text-left{
         order: 2;
         padding-top: 50px;
@@ -487,6 +484,13 @@ footer p span{
     }
     .sect_ME .contentF .bloc3 > .line_2 > img{
         margin: 5px 0;
+    }
+
+
+}
+@media all and (max-width: 359px){
+    .sect2 .back1{
+        background-position: 0 6%;
     }
 
 }
